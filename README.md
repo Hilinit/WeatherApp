@@ -1,16 +1,51 @@
-# React + Vite
+# 🌤️ Weather & News Portal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and lightweight React application designed to deliver real-time weather details and curated news updates. Built with modern UI standards, custom hooks, and standard API management.
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/React-18.x-blue?style=flat&logo=react)
+![Vite](https://img.shields.io/badge/Vite-5.x-646CFF?style=flat&logo=vite)
+![CSS3](https://img.shields.io/badge/CSS3-Glassmorphism-1572B6?style=flat&logo=css3)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Live Weather Search:** Search weather conditions across multiple locations.
+- **Glassmorphism UI:** Clean, modern sky-blue/cyan atmospheric design aesthetic.
+- **Debounced Inputs:** Optimized performance using a custom `useDebounce` hook to restrict rapid re-fetches.
+- **News Integration:** Responsive 3-column news grid with clean categories and metadata.
+- **Client-side Pagination:** Smooth pagination control to browse news articles efficiently.
+- **Custom Data Fetcher:** Decoupled `useFetch` custom hook for modular dynamic state handling.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- **Frontend:** React (Vite)
+- **Styling:** Modern Pure CSS (Custom Glassmorphism, CSS Grid & Flexbox)
+- **State Management:** Custom React Hooks (`useFetch`, `useDebounce`)
+- **Backend / API Mocking:** MockAPI.io REST API
+
+---
+
+## 📂 Project Structure
+
+```text
+Weather App/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Card.jsx
+│   │   ├── NewsList.jsx
+│   │   ├── Pagination.jsx
+│   │   ├── SearchBar.jsx
+│   │   └── WeatherCard.jsx
+│   ├── hooks/
+│   │   ├── useDebounce.js
+│   │   └── useFetch.js
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── index.html
+├── package.json
+└── vite.config.js
