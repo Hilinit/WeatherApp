@@ -1,4 +1,4 @@
-# 🌤️ Weather & News Portal
+# 🌤️ Weather & News App
 
 A modern, responsive, and lightweight React application designed to deliver real-time weather details and curated news updates. Built with modern UI standards, custom hooks, and standard API management.
 
