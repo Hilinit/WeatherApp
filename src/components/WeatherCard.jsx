@@ -1,4 +1,4 @@
-import { BiError } from "react-icons/bi";
+
 import { FaHourglassHalf } from "react-icons/fa";
 import { FaWind } from "react-icons/fa";
 export function WeatherCard({ weatherData, loading, error }) {
@@ -12,7 +12,7 @@ export function WeatherCard({ weatherData, loading, error }) {
   if (error) {
     return (
       <div className="weather-card weather-card-error">
-        <p className="weather-error-text"><BiError /> {error}</p>
+        <p className="weather-error-text"> {error}</p>
       </div>
     )
   }
